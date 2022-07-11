@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="queries.css" />
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <main>
+      <div class="logo">
+        <img src="./images/logo.svg" alt="logo" />
+      </div>
+      <div class="main-container">
+        <div class="tip">
+          <div class="bill">
+            <h2 class="title">Bill</h2>
+            <input type="text" class="input-bill" placeholder="0" />
+          </div>
+          <div class="select-tip">
+            <h2 class="title">Select Tip %</h2>
+            <div class="tips">
+              <input type="submit" class="btn-tip" value="5%" />
+              <input type="submit" class="btn-tip" value="10%" />
+              <input type="submit" class="btn-tip" value="15%" />
+              <input type="submit" class="btn-tip btn-active" value="25%" />
+              <input type="submit" class="btn-tip" value="50%" />
+              <div class="input">
+                <input class="enter custom" type="text" placeholder="0" />
+              </div>
+            </div>
+          </div>
+          <div class="input end">
+            <h2 class="title">Number of People</h2>
+            <input class="enter" id="people" type="text" placeholder="0" />
+            <div class="error-msg">Cant' be zero</div>
+          </div>
+        </div>
+        <div class="result">
+          <div class="tip-amount">
+            <h2 class="title amount-title">Tip Amount</h2>
+            <p class="person">/ person</p>
+            <p class="amount-result">$ 0</p>
+          </div>
+          <div class="tip-amount" id="total-amount">
+            <h2 class="title amount-title">Total</h2>
+            <p class="person">/ person</p>
+            <p class="amount-result">$ 0</p>
+          </div>
+          <input type="submit" class="btn-reset" value="RESET" />
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
